@@ -24,7 +24,7 @@ library("dplyr") #loading dplyr package for usage in step 5
 
 stdmean<-grep("mean\\()|std\\()", features[,2],value=FALSE) #choosing features variable numbers for mean and std
 stdmean2<-grep("mean\\()|std\\()", features[,2],value=TRUE) #now features names
-  # b. Renaming variable names into more compact form (i.e. removing some shitty symbols like "(" or "-" ) 
+# b. Renaming variable names into more compact form (i.e. removing some shitty symbols like "(" or "-" ) 
 stdmean2<-gsub("-","",stdmean2) # killing "-"
 stdmean2<-gsub("\\(\\)","",stdmean2) # killing "()"
 
